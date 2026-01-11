@@ -8,12 +8,14 @@ http.createServer((req, res) => {
 }).listen(process.env.PORT || 3000);
 
 // 2. BOT CONFIGURATION
+// 2. BOT CONFIGURATION
 const botArgs = {
-    host: '57.128.115.134', 
-    port: 27811,                  
+    host: 'infernomc.progamer.me', // Your domain
+    // We removed the port line so Mineflayer can find the port automatically
     username: 'Spectator',
-    password: 'spectator123', // This is what it will use to /register
-    version: '1.20.1'         // Force 1.20.1 for stability
+    password: 'spectator123', 
+    version: '1.20.1'         
+};       // Force 1.20.1 for stability
 };
 
 function createBot() {
